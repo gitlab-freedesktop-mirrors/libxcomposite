@@ -32,7 +32,7 @@ AC_PREREQ([2.60])
 # synchronized.
 #
 AC_INIT(libXcomposite, [0.4.4],
-	[https://bugs.freedesktop.org/enter_bug.cgi?product=xorg], [libXcomposite])
+	[https://gitlab.freedesktop.org/xorg/lib/libXcomposite/issues], [libXcomposite])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS([config.h])
 
