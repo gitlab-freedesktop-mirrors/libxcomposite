@@ -31,7 +31,7 @@ AC_PREREQ([2.60])
 # that 'revision' number appears in Xcomposite.h and has to be manually
 # synchronized.
 #
-AC_INIT(libXcomposite, [0.4.4],
+AC_INIT(libXcomposite, [0.4.5],
 	[https://gitlab.freedesktop.org/xorg/lib/libXcomposite/issues], [libXcomposite])
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_HEADERS([config.h])
