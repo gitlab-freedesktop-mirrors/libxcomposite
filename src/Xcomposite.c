@@ -53,7 +53,7 @@ const char XCompositeExtensionName[] = COMPOSITE_NAME;
  * extension object. (Replaces XextRemoveDisplay.)
  */
 static int
-XCompositeExtRemoveDisplay (XCompositeExtInfo *extinfo, Display *dpy)
+XCompositeExtRemoveDisplay (XCompositeExtInfo *extinfo, const Display *dpy)
 {
     XCompositeExtDisplayInfo *info, *prev;
 
@@ -172,7 +172,7 @@ XCompositeExtAddDisplay (XCompositeExtInfo	*extinfo,
  */
 static XCompositeExtDisplayInfo *
 XCompositeExtFindDisplay (XCompositeExtInfo *extinfo,
-		      Display	    *dpy)
+			  const Display	    *dpy)
 {
     XCompositeExtDisplayInfo *info;
 
