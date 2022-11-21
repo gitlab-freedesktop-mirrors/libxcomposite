@@ -83,7 +83,7 @@ XCompositeExtRemoveDisplay (XCompositeExtInfo *extinfo, const Display *dpy)
     if (info == extinfo->cur) extinfo->cur = NULL;  /* flush cache */
     _XUnlockMutex(_Xglobal_lock);
 
-    Xfree ((char *) info);
+    Xfree (info);
     return 1;
 }
 
@@ -104,7 +104,7 @@ XCompositeExtAddDisplay (XCompositeExtInfo	*extinfo,
 {
     XCompositeExtDisplayInfo    *info;
 
-    info = (XCompositeExtDisplayInfo *) Xmalloc (sizeof (XCompositeExtDisplayInfo));
+    info = Xmalloc (sizeof (XCompositeExtDisplayInfo));
     if (!info) return NULL;
     info->display = dpy;
 
