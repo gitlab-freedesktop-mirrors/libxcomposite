@@ -88,7 +88,7 @@ XCompositeExtRemoveDisplay (XCompositeExtInfo *extinfo, const Display *dpy)
 }
 
 static int
-XCompositeCloseDisplay (Display *dpy, XExtCodes *codes)
+XCompositeCloseDisplay (Display *dpy, _X_UNUSED XExtCodes *codes)
 {
     return XCompositeExtRemoveDisplay (&XCompositeExtensionInfo, dpy);
 }

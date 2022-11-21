@@ -46,6 +46,7 @@
 #define _XCOMPOSITEINT_H_
 
 #include <stdio.h>
+#include <X11/Xfuncproto.h>
 #include <X11/Xlib.h>
 #include <X11/Xlibint.h>
 #include <X11/Xutil.h>

@@ -63,7 +63,8 @@ COMPOSITEEXT_VERSION=[`echo $VERSION | sed 's/^\([0-9][0-9]*\.[0-9][0-9]*\).*$/\
 AC_SUBST(COMPOSITEEXT_VERSION)
 
 # Obtain compiler/linker options for dependencies
-PKG_CHECK_MODULES(XCOMPOSITE, [compositeproto >= $COMPOSITEEXT_VERSION] x11)
+PKG_CHECK_MODULES(XCOMPOSITE,
+        [compositeproto >= $COMPOSITEEXT_VERSION xproto >= 7.0.22 x11])
 PKG_CHECK_MODULES(XFIXES, xfixes)
 
 AC_CONFIG_FILES([Makefile
