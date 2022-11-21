@@ -76,9 +76,9 @@ XCompositeFindDisplay (Display *dpy);
 #define XCompositeHasExtension(i) ((i) && ((i)->codes))
 
 #define XCompositeCheckExtension(dpy,i,val) \
-  if (!XCompositeHasExtension(i)) { return val; }
+    do { if (!XCompositeHasExtension(i)) { return val; } } while (0)
 
 #define XCompositeSimpleCheckExtension(dpy,i) \
-  if (!XCompositeHasExtension(i)) { return; }
+    do { if (!XCompositeHasExtension(i)) { return; } } while (0)
 
 #endif /* _XCOMPOSITEINT_H_ */
